@@ -27,10 +27,14 @@ main {
 }
 
 header, footer {
-	@include mix.flex-align-center;
 	width: 100%;
-	padding: .75rem;
+	display: flex;
 	background-color: var.$primary-color;
+}
+
+header {
+	align-items: center;
+	padding: .75rem;
 }
 
 header {
@@ -38,7 +42,12 @@ header {
 }
 
 footer {
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
 	height: 250px;
+	gap: .5rem;
+	padding: 2rem 0;
 }
 
 h1 {

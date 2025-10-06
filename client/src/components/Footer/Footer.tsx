@@ -3,6 +3,7 @@ export default function Footer() {
     <>
       <footer>
         <h3>MarkupFlow</h3>
+        <p>Développé par Fabrice ATLAN</p>
       </footer>
     </>
   );
