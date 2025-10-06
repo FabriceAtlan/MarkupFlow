@@ -1,4 +1,51 @@
-.header-nav-ul {
+@use '../abstracts/variables.scss' as var;
+
+.header-nav {
 	display: flex;
-	gap: 1rem;
+}
+
+.header-nav-burger-bar {
+	--size: 30px;
+	position: relative;
+	width: var(--size);
+	height: var(--size);
+	transition: .1s transform ease-in-out;
+
+	&:hover {
+		transform: scale(115%, 115%);
+	}
+
+	@media screen and (min-width: 768px) {
+		display: none;		
+	}
+}
+
+.header-nav-ul {
+	display: none;
+	transition: .2s height ease-in;
+
+	&.open {
+		position: absolute;
+		top: 80px;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: 1rem;
+		padding: 1rem 1rem 3rem;
+		border: 2px solid var.$primary-color;
+		background-color: var.$secondary-color;
+		z-index: 1;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: flex !important;
+		flex-direction: row;
+		position: relative;
+		gap: 1.5rem;
+	}
+}
+
+.header-title {
+	margin: 0 auto;
 }
