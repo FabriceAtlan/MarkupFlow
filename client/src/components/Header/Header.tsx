@@ -5,15 +5,6 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const [showPanel, setShowPanel] = useState(false);
 
-  useEffect(() => {
-    const mq = window.matchMedia("(min-width: 768px)");
-    console.warn(mq);
-    const listener = (e: MediaQueryListEvent) =>
-      e.matches && setShowPanel(false);
-    mq.addEventListener("change", listener);
-    return () => mq.removeEventListener("change", listener);
-  }, []);
-
   return (
     <>
       <header>
@@ -27,12 +18,17 @@ export default function Header() {
           <ul className={`header-nav-ul ${showPanel ? "open" : ""}`}>
             <li>
               <CustomNavLink onClick={() => setShowPanel(false)} to="/">
-                Home
+                Accueil
               </CustomNavLink>
             </li>
             <li>
               <CustomNavLink onClick={() => setShowPanel(false)} to="/editor">
                 Éditeur
+              </CustomNavLink>
+            </li>
+            <li>
+              <CustomNavLink onClick={() => setShowPanel(false)} to="/about">
+                À propos
               </CustomNavLink>
             </li>
           </ul>
