@@ -18,12 +18,17 @@ export default function Header() {
           <ul className={`header-nav-ul ${showPanel ? "open" : ""}`}>
             <li>
               <CustomNavLink onClick={() => setShowPanel(false)} to="/">
-                Home
+                Accueil
               </CustomNavLink>
             </li>
             <li>
               <CustomNavLink onClick={() => setShowPanel(false)} to="/editor">
                 Éditeur
+              </CustomNavLink>
+            </li>
+            <li>
+              <CustomNavLink onClick={() => setShowPanel(false)} to="/about">
+                À propos
               </CustomNavLink>
             </li>
           </ul>
