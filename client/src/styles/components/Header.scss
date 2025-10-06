@@ -22,7 +22,6 @@
 
 .header-nav-ul {
 	display: none;
-	transition: .2s height ease-in;
 
 	&.open {
 		position: absolute;
@@ -33,7 +32,6 @@
 		width: 100%;
 		gap: 1rem;
 		padding: 1rem 1rem 3rem;
-		border: 2px solid var.$primary-color;
 		background-color: var.$secondary-color;
 		z-index: 1;
 	}
