@@ -1,0 +1,17 @@
+# client
+client/node_modules/
+client/.env
+client/.env-production
+
+# server
+server/node_modules/
+server/.env
+
+# build outputs
+client/dist
+client/build/
+
+server/dist
+server/build/
+
+client/node_modules/.vite
