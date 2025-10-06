@@ -5,10 +5,76 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	color: var.$dark-color;
+}
+
+#root {
+	width: 100vw;
+	min-height: 100vh;
 }
 
 body {
 	@include mix.flex-center;
 	font-family: var.$font-family;
 	background-color: var.$tertiary-color;
+}
+
+main {
+	height: 100vh;
+	padding: 1.5rem;
+	box-sizing: border-box;
+}
+
+header, footer {
+	@include mix.flex-align-center;
+	width: 100%;
+	padding: .75rem;
+	background-color: var.$primary-color;
+}
+
+header {
+	height: 80px;
+}
+
+footer {
+	height: 250px;
+}
+
+h1 {
+	text-align: center;
+	font-size: var.$font-heading-xl;
+
+	@media screen and (min-width: 768px) {
+		text-align: left;
+	}
+}
+
+h2 {
+	font-size: var.$font-heading-lg;
+}
+
+a {
+	position: relative;
+	text-decoration: none;
+	color: var.$light-color;
+	font-size: var.$font-sm;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: -.5rem;
+		transform: translateX(-50%) scaleX(0);
+		transform-origin: center;
+		width: 100%;
+		height: 2px;
+		background-color: var.$light-color;
+		transition: .1s transform ease-in-out;
+	}
+
+	&:hover::after {
+		transform: translateX(-50%) scaleX(1);
+	}
+
+	&.active::after { transform: translateX(-50%) scaleX(1);}
 }

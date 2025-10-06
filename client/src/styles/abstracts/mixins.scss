@@ -3,3 +3,14 @@
 	justify-content: center;
 	align-items: center;
 }
+
+@mixin flex-align-center {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+@mixin flex-justify-center {
+	display: flex;
+	justify-content: center;
+}
