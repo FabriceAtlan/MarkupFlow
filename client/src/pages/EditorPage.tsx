@@ -1,7 +1,7 @@
 import { EditorProvider } from "../context/EditorContext";
 import { Editor } from "../components/Editor/Editor";
 import EditorButtons from "../components/FormTools/EditorButtons";
-// import "../styles/EditorNew.css";
+import "../styles/components/editor.scss";
 import { Toolbar } from "../components/Editor/Toolbar";
 
 export default function EditorPage() {
@@ -14,31 +14,29 @@ export default function EditorPage() {
   return (
     <EditorProvider>
       <section className="editor-container">
-        <div className="editor">
-          <aside>
-            <p>
-              <strong>Niveau de titre</strong>
-            </p>
-            <ul>
-              {headingList.map((e) => (
-                <li key={e.id}>
-                  <strong>h{e.id}&nbsp;: </strong>
-                  <code>ctrl + alt {e.id}</code>
-                </li>
-              ))}
-            </ul>
-
-            <p>
-              <strong>Liste à puces</strong>
-            </p>
-            <ul>
-              <li>
-                <strong>ul&nbsp;: </strong>
-                <code>ctrl&nbsp;+&nbsp;Alt&nbsp;+&nbsp;l</code>{" "}
+        <aside>
+          <p>
+            <strong>Niveau de titre</strong>
+          </p>
+          <ul>
+            {headingList.map((e) => (
+              <li key={e.id}>
+                <strong>h{e.id}&nbsp;: </strong>
+                <code>ctrl + alt {e.id}</code>
               </li>
-            </ul>
-          </aside>
-        </div>
+            ))}
+          </ul>
+
+          <p>
+            <strong>Liste à puces</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>ul&nbsp;: </strong>
+              <code>ctrl&nbsp;+&nbsp;Alt&nbsp;+&nbsp;l</code>{" "}
+            </li>
+          </ul>
+        </aside>
         <Editor />
         <EditorButtons />
         <Toolbar />
