@@ -5,6 +5,17 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const [showPanel, setShowPanel] = useState(false);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768 && showPanel) {
+        setShowPanel(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [showPanel]);
+
   return (
     <>
       <header>
