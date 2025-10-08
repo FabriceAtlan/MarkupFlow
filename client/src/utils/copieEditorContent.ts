@@ -40,7 +40,13 @@ export async function copieCurrentLine(
     } else {
       const serializer = DOMSerializer.fromSchema(editor.state.schema);
       const dom = serializer.serializeNode(node);
-      const html = dom.outerHTML;
+
+      const container = document.createElement("div");
+      container.appendChild(dom);
+      let html = container.innerHTML.trim();
+
+      // Facultatif : ajoute un wrapper pour la compatibilité clipboard
+      html = `<div>${html}</div>`;
 
       await navigator.clipboard.write([
         new ClipboardItem({

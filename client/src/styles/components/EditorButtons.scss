@@ -13,8 +13,44 @@
 	width: var(--size);
 	height: var(--size);
 	transition: 125ms transform ease;
+	cursor: pointer;
 
 	&:hover {
 		transform: scale(110%, 110%);
+	}
+}
+
+.btn-wrapper {
+	position: relative;
+}
+
+.btn-popup {
+	position: absolute;
+	top: -30px;
+	left: 0;
+	padding: .5rem;
+	border: 2px solid #f79e4b;
+	background-color: #e6e67d;
+	animation: translateY 850ms ease-out forwards;
+	z-index: 1;
+}
+
+@keyframes translateY {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	25% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	75% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
 	}
 }
