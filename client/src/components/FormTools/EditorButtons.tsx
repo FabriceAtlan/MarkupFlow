@@ -9,32 +9,32 @@ export default function EditorButtons() {
 
   return (
     <section className="form-tools">
-      <button
+      <img
+        src="picto-copy.png"
+        alt=""
         className="btn"
         onClick={() => copieEditorContent(editor, "html")}
-      >
-        Copy
-      </button>
+      />
 
-      <button
+      <img
+        src="picto-refresh.png"
+        alt=""
         className="btn"
         onClick={() => {
           editor.commands.setContent("");
           editor.commands.clearContent();
           editor.commands.focus();
         }}
-      >
-        New
-      </button>
+      />
 
-      <button
+      <img
+        src="picto-save.png"
+        alt=""
         className="btn"
         onClick={() => {
           saveToFileJSON(editor);
         }}
-      >
-        Save
-      </button>
+      />
 
       <LoadFileButton editor={editor} />
     </section>

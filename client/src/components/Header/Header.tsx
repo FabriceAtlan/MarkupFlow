@@ -20,6 +20,7 @@ export default function Header() {
     <>
       <header>
         <nav className="header-nav">
+          <h1 className="header-title">MarkupFlow</h1>
           <img
             className="header-nav-burger-bar"
             src="burger-bar.png"
@@ -44,7 +45,6 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <h1 className="header-title">MarkupFlow</h1>
       </header>
     </>
   );

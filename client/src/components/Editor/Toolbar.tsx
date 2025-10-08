@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useEditorContext } from "../../context/EditorContext";
 import { BubbleMenu } from "@tiptap/react/menus";
 import { copieCurrentLine } from "../../utils/copieEditorContent";
+import "../../styles/components/toolBar.scss";
 
 export const Toolbar: React.FC = () => {
   const editor = useEditorContext();
