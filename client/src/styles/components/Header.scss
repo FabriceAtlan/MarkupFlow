@@ -4,7 +4,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1rem;
+	width: 100%;
 	z-index: 1;
 
 	&-burger-bar {
@@ -34,7 +34,7 @@
 
 			a {
 				text-decoration: none;
-				color: var.$dark-color;
+				color: var.$light-color;
 				font-weight: 500;
 
 				&.active {
@@ -46,11 +46,12 @@
 }
 
 .header-title {
-	margin: 0 auto;
+	color: var.$light-color;
 }
 
 @media (min-width: 768px) {
 	.header-nav {
+		gap: 3rem;
 		&-burger-bar {
 			display: none;
 		}
@@ -63,7 +64,7 @@
 			height: 0;
 			gap: 2rem;
 			background: none;
-			padding: 0;
+			padding-left: 3rem;
 			
 			&.open {
 				display: flex;

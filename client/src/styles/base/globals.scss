@@ -1,13 +1,6 @@
 @use '../abstracts/variables.scss' as var;
 @use '../abstracts/mixins.scss' as mix;
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	color: var.$dark-color;
-}
-
 #root {
 	width: 100vw;
 	min-height: 100vh;
@@ -22,7 +15,7 @@ body {
 main {
 	position: relative;
 	height: 100vh;
-	padding: 3rem 2rem;
+	padding: 2rem .5rem 3rem;
 	box-sizing: border-box;
 }
 

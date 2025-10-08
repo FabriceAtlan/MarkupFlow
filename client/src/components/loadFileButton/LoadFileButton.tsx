@@ -21,14 +21,13 @@ export const LoadFileButton = ({ editor }: { editor: any }) => {
 
   return (
     <>
-      <button
-        type="button"
+      <img
+        src="picto-load.png"
+        alt=""
         className="btn"
         id="btn-input"
         onClick={handleClick}
-      >
-        Load
-      </button>
+      />
       <input
         key={inputKey}
         type="file"

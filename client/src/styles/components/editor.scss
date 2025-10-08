@@ -1,19 +1,5 @@
 @use '../abstracts/variables.scss' as var;
 
-.editor-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto 1fr;
-	gap: 2rem;
-	width: 95%;
-	height: 100%;
-	margin: 0 auto;
-
-	@media screen and (min-width: 768px) {
-		max-width: 950px;
-	}
-}
-
 .ProseMirror { border: none; outline: none;}
 
 .tiptap {
@@ -23,8 +9,8 @@
 	&-container {
 		line-height: 1.5;
 		padding: 1.15rem;
-		border: 2px solid var.$secondary-color;
-		background-color: var(--light-grey);
+		background-color: var.$bg-editor;
+		box-shadow: -12px 12px 12px grey;
 		overflow-y: auto;
 	}
 
@@ -62,41 +48,3 @@
 	&-container em {font-synthesis: initial;}
 }
 
-/* BubbleMenu */
-.bubble-menu-wrapper {
-	display: flex;
-	width: 350px;
-	gap: 1.5rem;
-	border-radius: .5rem;
-	padding: .75rem;
-	border: 2px solid var.$secondary-color;
-	background-color: var.$tertiary-color;
-}
-
-.bubble-menu-btn {
-	width: 60px;
-	height: 30px;
-	padding: .25rem;
-	border: 2px solid #2b2a2a;
-	color: white;
-	transition: .2s ease-in-out;
-}
-
-.bubble-menu {
-	&-btn:hover {
-		border: 2px solid #333333;
-		background-color: white;
-		color: #333333;
-	}
-	
-	&-picto {
-		cursor: pointer;
-		width: 30px;
-		height: auto;
-		transition: .2s transform ease-in-out;
-	}
-
-	&-picto:hover {
-		transform: scale(115%, 115%);
-	}
-}

@@ -11,27 +11,29 @@ export default function About() {
   return (
     <>
       <section className="tuto-list">
-        <p>
-          <strong>Niveau de titre</strong>
-        </p>
-        <ul>
-          {headingList.map((e) => (
-            <li key={e.id}>
-              <strong>h{e.id}&nbsp;: </strong>
-              <code>ctrl + alt {e.id}</code>
-            </li>
-          ))}
-        </ul>
+        <div>
+          <p>
+            <strong>Niveau de titre</strong>
+          </p>
+          <ul>
+            {headingList.map((e) => (
+              <li key={e.id}>
+                <strong>h{e.id}&nbsp;: </strong>
+                <code>ctrl + alt {e.id}</code>
+              </li>
+            ))}
+          </ul>
 
-        <p>
-          <strong>Liste à puces</strong>
-        </p>
-        <ul>
-          <li>
-            <strong>ul&nbsp;: </strong>
-            <code>ctrl&nbsp;+&nbsp;Alt&nbsp;+&nbsp;l</code>{" "}
-          </li>
-        </ul>
+          <p>
+            <strong>Liste à puces</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>ul&nbsp;: </strong>
+              <code>ctrl&nbsp;+&nbsp;Alt&nbsp;+&nbsp;l</code>{" "}
+            </li>
+          </ul>
+        </div>
       </section>
     </>
   );
