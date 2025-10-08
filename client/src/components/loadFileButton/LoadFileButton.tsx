@@ -23,7 +23,7 @@ export const LoadFileButton = ({ editor }: { editor: any }) => {
         id="btn-input"
         onClick={handleClick}
       >
-        Charger
+        Load
       </button>
       <input
         type="file"

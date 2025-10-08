@@ -3,22 +3,14 @@
 .editor-container {
 	display: grid;
 	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr;
 	gap: 2rem;
 	width: 95%;
 	height: 100%;
 	margin: 0 auto;
-}
 
-aside {
-	& p {
-		margin: 0;
-		border: none;
-	}
-
-	& ul {
-		list-style-type: disc;
-		list-style-position: inside;
-		margin: .5rem;
+	@media screen and (min-width: 768px) {
+		max-width: 950px;
 	}
 }
 
@@ -106,40 +98,5 @@ aside {
 
 	&-picto:hover {
 		transform: scale(115%, 115%);
-	}
-}
-
-.form-tools {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-	justify-items: center;
-	gap: 1.25rem;
-}
-
-.btn {
-	width: 100%;
-	max-width: 120px;
-	height: 40px;
-	background-color: var(--tertiary-color);
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-@media screen and (min-width: 768px) {
-	.editor-container{
-		grid-area: editor;
-		grid-template-areas: "aside editor btn";
-		grid-template-columns: 200px 1fr auto;
-		max-width: 1200px;
-	}
-	
-	aside {grid-area: aside;}
-
-	.form-tools {
-		grid-area: btn;
-	}
-	
-	.form-tools {
-		height: fit-content;
 	}
 }
