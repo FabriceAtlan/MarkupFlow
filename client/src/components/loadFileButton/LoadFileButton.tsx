@@ -1,9 +1,10 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { loadFromFileJSON } from "../../utils/saveFileToJSON";
 
 export const LoadFileButton = ({ editor }: { editor: any }) => {
   if (!editor) return null;
 
+  const [inputKey, setInputKey] = useState(Date.now());
   const hiddenFileInput = useRef<HTMLInputElement | null>(null);
 
   const handleClick = () => {
@@ -12,7 +13,10 @@ export const LoadFileButton = ({ editor }: { editor: any }) => {
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
-    if (file) loadFromFileJSON(editor, file);
+    if (file) {
+      loadFromFileJSON(editor, file);
+      setInputKey(Date.now());
+    }
   };
 
   return (
@@ -26,6 +30,7 @@ export const LoadFileButton = ({ editor }: { editor: any }) => {
         Load
       </button>
       <input
+        key={inputKey}
         type="file"
         id="btn-input"
         ref={hiddenFileInput}
