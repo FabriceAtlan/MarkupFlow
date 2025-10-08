@@ -1,6 +1,7 @@
-export const saveToFileJSON = (editor: any) => {
+export const saveToFileJSON = async (editor: any) => {
 	if (!editor) return;
 
+	try {
 	const content = editor.getJSON();
 
 	const blob = new Blob([JSON.stringify(content, null, 2)], { type: "application/json"});
@@ -11,6 +12,10 @@ export const saveToFileJSON = (editor: any) => {
 	anchor.download = "document.json";
 	anchor.click();
 	URL.revokeObjectURL(url);
+	return true;
+	} catch (err) {
+		return false;
+	}
 }
 
 export const loadFromFileJSON = (editor: any, file: File) => {
@@ -27,4 +32,5 @@ export const loadFromFileJSON = (editor: any, file: File) => {
 		}
 	};
 	reader.readAsText(file);
+	return true;
 }
