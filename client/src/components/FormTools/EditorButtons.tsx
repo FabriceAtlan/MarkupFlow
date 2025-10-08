@@ -2,6 +2,7 @@ import { useEditorContext } from "../../context/EditorContext";
 import { copieEditorContent } from "../../utils/copieEditorContent";
 import { saveToFileJSON } from "../../utils/saveFileToJSON";
 import { LoadFileButton } from "../loadFileButton/LoadFileButton";
+import "../../styles/components/EditorButtons.scss";
 
 export default function EditorButtons() {
   const editor = useEditorContext();
@@ -12,7 +13,7 @@ export default function EditorButtons() {
         className="btn"
         onClick={() => copieEditorContent(editor, "html")}
       >
-        Copier HTML
+        Copy
       </button>
 
       <button
@@ -23,7 +24,7 @@ export default function EditorButtons() {
           editor.commands.focus();
         }}
       >
-        Nouveau
+        New
       </button>
 
       <button
@@ -32,7 +33,7 @@ export default function EditorButtons() {
           saveToFileJSON(editor);
         }}
       >
-        Sauvegarder
+        Save
       </button>
 
       <LoadFileButton editor={editor} />
