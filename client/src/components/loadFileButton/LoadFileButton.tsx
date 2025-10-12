@@ -27,6 +27,7 @@ export const LoadFileButton = ({ editor }: { editor: any }) => {
         className="btn"
         id="btn-input"
         onClick={handleClick}
+        title="Charger un fichier"
       />
       <input
         key={inputKey}
