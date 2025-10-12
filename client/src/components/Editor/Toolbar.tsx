@@ -48,7 +48,11 @@ export const Toolbar: React.FC = () => {
       />
 
       {/* Select pour Heading / Paragraphe */}
-      <select value={currentBlock} onChange={handleHeadingChange}>
+      <select
+        className="bubble-select"
+        value={currentBlock}
+        onChange={handleHeadingChange}
+      >
         <option value="0">Paragraphe</option>
         <option value="1">H1</option>
         <option value="2">H2</option>

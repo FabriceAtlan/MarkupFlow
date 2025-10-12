@@ -28,13 +28,22 @@
 	&-container h1, h2, h3, h4, p {
 		margin: 0 0 1rem 0;
 		padding: .25rem;
-		border: 1px solid #bbbbf7;
+		border: 2px solid #bbbbf7;
 		transition: .2s solid ease-in-out;
 	}
 
 	&-container h1:hover, &-container h2:hover, &-container h3:hover, &-container h4:hover, p:hover {
-		border: 1px solid rgb(212, 158, 58);
+		border: 2px solid rgb(212, 158, 58);
 		cursor: pointer;
+	}
+
+	&-container p {
+		min-height: 120px;
+		max-height: 200px;
+		overflow-y: auto;
+		overflow-wrap: break-word;
+		word-break: break-word;
+		white-space: normal;
 	}
 
 	&-container ul {

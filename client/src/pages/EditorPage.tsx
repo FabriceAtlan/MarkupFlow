@@ -10,10 +10,8 @@ export default function EditorPage() {
     <EditorProvider>
       <section className="editor-container">
         <EditorButtons />
-        <div>
-          <Toolbar />
-          <Editor />
-        </div>
+        <Toolbar />
+        <Editor />
       </section>
     </EditorProvider>
   );

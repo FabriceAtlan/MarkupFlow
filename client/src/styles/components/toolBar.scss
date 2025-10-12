@@ -5,7 +5,7 @@
 	position: sticky;
 	top: 2rem;
 	display: flex;
-	width: 350px;
+	width: fit-content;
 	gap: 1.5rem;
 	padding: .75rem;
 	border: 2px solid var.$primary-color;
@@ -39,4 +39,10 @@
 	&-picto:hover {
 		transform: scale(115%, 115%);
 	}
+}
+
+.bubble-select {
+	width: fit-content;
+	padding: 0 1rem;
+	text-align: left;
 }
