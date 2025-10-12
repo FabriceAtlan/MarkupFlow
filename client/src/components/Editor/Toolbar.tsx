@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useEditorContext } from "../../context/EditorContext";
-import { BubbleMenu } from "@tiptap/react/menus";
+// import { BubbleMenu } from "@tiptap/react/menus";
 import { copieCurrentLine } from "../../utils/copieEditorContent";
 import "../../styles/components/toolBar.scss";
 
@@ -37,7 +37,8 @@ export const Toolbar: React.FC = () => {
   };
 
   return (
-    <BubbleMenu editor={editor} className="bubble-menu-wrapper">
+    // <BubbleMenu editor={editor} className="bubble-menu-wrapper">
+    <div className="bubble-menu-wrapper">
       {/* Bouton copier*/}
       <img
         onClick={() => copieCurrentLine(editor, "html")}
@@ -78,6 +79,7 @@ export const Toolbar: React.FC = () => {
         src="picto-italic.png"
         alt=""
       />
-    </BubbleMenu>
+    </div>
+    // </BubbleMenu>
   );
 };

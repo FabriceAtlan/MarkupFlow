@@ -3,8 +3,9 @@
 .ProseMirror { border: none; outline: none;}
 
 .tiptap {
+	position: relative;
 	min-height: 500px;
-	height: fit-content;
+	height: 800px;
 
 	&-container {
 		line-height: 1.5;

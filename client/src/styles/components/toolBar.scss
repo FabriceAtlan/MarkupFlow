@@ -2,13 +2,15 @@
 
 /* BubbleMenu */
 .bubble-menu-wrapper {
+	position: sticky;
+	top: 0;
 	display: flex;
 	width: 350px;
 	gap: 1.5rem;
-	border-radius: .5rem;
 	padding: .75rem;
 	border: 2px solid var.$primary-color;
 	background-color: var.$light-color;
+	z-index: 1;
 }
 
 .bubble-menu-btn {
