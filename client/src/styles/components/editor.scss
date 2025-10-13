@@ -37,7 +37,7 @@
 	}
 
 	&-container p {
-		min-height: 120px;
+		min-height: fit-content;
 		max-height: 200px;
 		overflow-y: auto;
 		overflow-wrap: break-word;

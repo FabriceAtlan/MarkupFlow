@@ -110,7 +110,7 @@ export const Toolbar: React.FC = () => {
         <img
           onClick={addLink}
           className="bubble-menu-picto"
-          src="picto-italic.png"
+          src="share-link.png"
           alt=""
         />
       </div>
