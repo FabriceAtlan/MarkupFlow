@@ -35,18 +35,17 @@ export async function copieCurrentLine(
   if (!node || !node.textContent.trim()) return;
 
   try {
+    const text = node.textContent.trim();
+
     if (format === "text") {
-      await navigator.clipboard.writeText(node.textContent.trim());
+      await navigator.clipboard.writeText(text);
     } else {
       const serializer = DOMSerializer.fromSchema(editor.state.schema);
-      const dom = serializer.serializeNode(node);
+      const domNode = serializer.serializeNode(node);
 
-      const container = document.createElement("div");
-      container.appendChild(dom);
-      let html = container.innerHTML.trim();
-
-      // Facultatif : ajoute un wrapper pour la compatibilité clipboard
-      html = `<div>${html}</div>`;
+      const tempContainer = document.createElement("template");
+      tempContainer.content.appendChild(domNode.cloneNode(true));
+      const html = tempContainer.innerHTML;
 
       await navigator.clipboard.write([
         new ClipboardItem({
