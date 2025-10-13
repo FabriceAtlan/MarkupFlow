@@ -7,4 +7,12 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+    optimizeDeps: {
+    include: [
+      '@tiptap/core',
+      '@tiptap/starter-kit',
+      '@tiptap/extension-link',
+      '@tiptap/react'
+    ],
+  },
 })

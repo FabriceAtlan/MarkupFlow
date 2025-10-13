@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useEditorContext } from "../../context/EditorContext";
-// import { BubbleMenu } from "@tiptap/react/menus";
 import { copieCurrentLine } from "../../utils/copieEditorContent";
 import "../../styles/components/toolBar.scss";
 
 export const Toolbar: React.FC = () => {
   const editor = useEditorContext();
   const [currentBlock, setCurrentBlock] = useState("0");
+  const [url, setUrl] = useState("");
 
   useEffect(() => {
     if (!editor) return;
@@ -36,17 +36,18 @@ export const Toolbar: React.FC = () => {
     else editor.chain().setNode("heading", { level }).run();
   };
 
-  return (
-    // <BubbleMenu editor={editor} className="bubble-menu-wrapper">
-    <div className="bubble-menu-wrapper">
-      {/* Bouton copier*/}
-      <img
-        onClick={() => copieCurrentLine(editor, "html")}
-        className="bubble-menu-picto"
-        src="picto-copy.png"
-        alt=""
-      />
+  const addLink = () => {
+    if (!url) return null;
+    const href =
+      url.startsWith("http://") || url.startsWith("https://")
+        ? url
+        : `https://${url}`;
+    editor.chain().focus().extendMarkRange("link").setLink({ href }).run();
+    setUrl("");
+  };
 
+  return (
+    <div className="bubble-menu-wrapper">
       {/* Select pour Heading / Paragraphe */}
       <select
         className="bubble-select"
@@ -60,30 +61,59 @@ export const Toolbar: React.FC = () => {
         <option value="4">H4</option>
       </select>
 
-      {/* Bouton bullet list */}
-      <img
-        onClick={() => editor.chain().focus().toggleBulletList().run()}
-        className="bubble-menu-picto"
-        src="picto-bullet.png"
-        alt=""
-      />
+      <div className="div-btn-feat-wrapper">
+        {/* Bouton copier*/}
+        <img
+          onClick={() => copieCurrentLine(editor, "html")}
+          className="bubble-menu-picto"
+          src="picto-copy.png"
+          alt=""
+        />
+        {/* Bouton bullet list */}
+        <img
+          onClick={() => editor.chain().focus().toggleBulletList().run()}
+          className="bubble-menu-picto"
+          src="picto-bullet.png"
+          alt=""
+        />
 
-      {/* Bouton Gras */}
-      <img
-        onClick={() => editor.chain().focus().toggleBold().run()}
-        className="bubble-menu-picto"
-        src="picto-bold.png"
-        alt=""
-      />
+        {/* Bouton Gras */}
+        <img
+          onClick={() => editor.chain().focus().toggleBold().run()}
+          className="bubble-menu-picto"
+          src="picto-bold.png"
+          alt=""
+        />
 
-      {/* Bouton Italique */}
-      <img
-        onClick={() => editor.chain().focus().toggleItalic().run()}
-        className="bubble-menu-picto"
-        src="picto-italic.png"
-        alt=""
-      />
+        {/* Bouton Italique */}
+        <img
+          onClick={() => editor.chain().focus().toggleItalic().run()}
+          className="bubble-menu-picto"
+          src="picto-italic.png"
+          alt=""
+        />
+      </div>
+
+      <div className="div-url-wrapper">
+        {/* Bouton URL */}
+        <input
+          className="input-url"
+          type="text"
+          value={url}
+          placeholder="Entrer l'URL"
+          onChange={(e) => setUrl(e.target.value)}
+        />
+        <div className="checkbox-link">
+          <input type="checkbox" id="checkbox-link" />
+          <label htmlFor="checkbox-link">Target</label>
+        </div>
+        <img
+          onClick={addLink}
+          className="bubble-menu-picto"
+          src="picto-italic.png"
+          alt=""
+        />
+      </div>
     </div>
-    // </BubbleMenu>
   );
 };

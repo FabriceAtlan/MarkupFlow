@@ -4,9 +4,12 @@
 .bubble-menu-wrapper {
 	position: sticky;
 	top: 2rem;
-	display: flex;
-	width: fit-content;
-	gap: 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	align-items: flex-start;
+	width: 100%;
+	column-gap: .75rem;
+	row-gap: 1rem;
 	padding: .75rem;
 	border: 2px solid var.$primary-color;
 	background-color: var.$light-color;
@@ -42,7 +45,26 @@
 }
 
 .bubble-select {
-	width: fit-content;
-	padding: 0 1rem;
+	width: 100%;
+	padding: .5rem 0;
 	text-align: left;
+}
+
+.div-url-wrapper, .div-btn-feat-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: .75rem;
+}
+
+.input-url {
+	width: 100%;
+	padding: .5rem;
+}
+
+.checkbox-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .5rem;
 }

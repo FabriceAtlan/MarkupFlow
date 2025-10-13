@@ -11,7 +11,7 @@ export const shortCut = Extension.create({
 			"Mod-Alt-4": () => this.editor.chain().focus().toggleHeading({ level: 4 }).run(),
 
 			// Bullet list
-			"Mod-Alt-l": () => this.editor.chain().focus().toggleBulletList().run()
+			"Mod-Alt-l": () => this.editor.chain().focus().toggleBulletList().run(),
 		}
 	}
 })
