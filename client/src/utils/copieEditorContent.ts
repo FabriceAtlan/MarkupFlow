@@ -44,7 +44,7 @@ export async function copieCurrentLine(
       const domNode = serializer.serializeNode(node);
 
       const tempContainer = document.createElement("template");
-      tempContainer.content.appendChild(domNode.cloneNode(true));
+      tempContainer.content.append(...Array.from(domNode.childNodes));
       const html = tempContainer.innerHTML;
 
       await navigator.clipboard.write([
