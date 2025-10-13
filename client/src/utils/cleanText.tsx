@@ -16,6 +16,7 @@ const unwantedWords = [
 
 const listChars = [":", ";", "!", "?", "»"];
 const listChars1 = ["«"];
+const flag = "#";
 
 function normalizeWordChars(text: string) {
   return text.replace(/[–—]/g, "-"); // remplace EN DASH et EM DASH par "-"
@@ -52,6 +53,10 @@ export function cleanText(text: string): string {
   const escapedChars1 = listChars1.map((c) => `\\${c}`).join("|");
   const regex1 = new RegExp(`(${escapedChars1})\\s*([^\\u00A0\\n])`, "g");
   cleaned = cleaned.replace(regex1, "$1\u00A0$2");
+
+  // Remplacer le flag # par NBSP
+  const regFlag = new RegExp(`${flag}\\s*`, "g");
+  cleaned = cleaned.replace(regFlag, "\u00A0");
 
   // Correction de l'âge
   cleaned = addNonBreakingSpaceBeforeUnit(cleaned);
