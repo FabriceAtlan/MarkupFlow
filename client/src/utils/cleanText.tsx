@@ -14,7 +14,8 @@ const unwantedWords = [
   "Chapô :",
 ];
 
-const listChars = [":", ";", "!", "?", "(", "»"];
+const listChars = [":", ";", "!", "?", "»"];
+const listChars1 = ["«"];
 
 function normalizeWordChars(text: string) {
   return text.replace(/[–—]/g, "-"); // remplace EN DASH et EM DASH par "-"
@@ -46,6 +47,11 @@ export function cleanText(text: string): string {
   const escapedChars = listChars.map((c) => `\\${c}`).join("|");
   const regex = new RegExp(`([^\\u00A0\\n])\\s*(${escapedChars})`, "g");
   cleaned = cleaned.replace(regex, "$1\u00A0$2");
+
+  // ajout d'espaces insécables après certains caractères
+  const escapedChars1 = listChars1.map((c) => `\\${c}`).join("|");
+  const regex1 = new RegExp(`(${escapedChars1})\\s*([^\\u00A0\\n])`, "g");
+  cleaned = cleaned.replace(regex1, "$1\u00A0$2");
 
   // Correction de l'âge
   cleaned = addNonBreakingSpaceBeforeUnit(cleaned);
