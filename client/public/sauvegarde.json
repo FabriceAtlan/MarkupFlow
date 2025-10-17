@@ -69,7 +69,25 @@
       "content": [
         {
           "type": "text",
-          "text": "5 conseils pour bien acheter ses appareils numériques "
+          "text": "5 conseils pour bien acheter ses appareils numériques"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Vous envisagez l’achat d’un smartphone plus design, d’un ordinateur d’une TV… Découvrez comment bien choisir vos appareils numériques en limitant leur impact environnemental et social."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "conseils-achats-numerique"
         }
       ]
     },
@@ -429,7 +447,7 @@
       "content": [
         {
           "type": "text",
-          "text": "Et si cette année, on faisait varier le « traditionnel » menu de Noël pour faire un peu moins copieux et beaucoup plus vertueux ?"
+          "text": "Et si cette année, on faisait varier le « traditionnel » menu de Noël pour faire un peu moins copieux et beaucoup plus vertueux ?"
         }
       ]
     },
@@ -502,6 +520,576 @@
         {
           "type": "text",
           "text": "Consommation des appareils ménagers"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Sobriété énergétique : les gestes essentiels cet hiver"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Pour lutter contre le changement climatique et en période d’augmentation des prix de l’énergie, il est indispensable de réduire nos consommations. Comment faire ? Tour d’horizon des gestes essentiels."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "gestes-essenti"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "10 bons gestes en télétravail"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Le télétravail évite de nombreux déplacements, ce qui réduit les émissions de gaz à effet de serre et améliore la qualité de l’air. Mais le numérique consomme aussi de l’énergie. Alors quels sont les bons gestes à adopter ?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "gestes-tele"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Quels ustensiles de cuisine choisir pour préserver sa santé ?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Certains ustensiles utilisés au quotidien pour cuisiner peuvent libérer des substances toxiques au fil du temps ou sous l’effet de la chaleur. Découvrez nos conseils pour faire les meilleurs choix."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "article-sante-environnement"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Des solutions pour réduire le gaspillage alimentaire"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Nous gaspillons tous de la nourriture sans avoir l’impression de jeter beaucoup. Pourtant, chaque Français jette environ 25 kg de nourriture par an ! Des solutions existent pour limiter la quantité de nourriture mise à la poubelle."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "pause-cafe-bureau"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Comment bien choisir votre électroménager ?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "L’étiquette énergie est là pour vous guider dans votre choix. Découvrez les appareils les mieux classés sur l’étiquette et obtenant le meilleur score en termes de rapport qualité/prix."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "conso-etiquette-eergie"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Acheter des appareils électriques et électroniques faits pour durer"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Vous pouvez désormais repérer les appareils les plus faciles à réparer et ceux qui ont été élaborés pour durer longtemps grâce à la notation de l’indice de durabilité."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "indice-durable-televiseur"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Électricité : quels appareils consomment le plus dans votre maison ?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Avec la hausse des prix, de plus en plus de foyers sont attentifs à leurs dépenses d'électricité. Pour savoir où réaliser des économies, il est essentiel de savoir ce qui pèse le plus dans la facture. Tour d'horizon des appareils qui consomment le plus et des économies possibles."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "domicile-consommation-electrique"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Comment choisir ses vêtements et chaussures de sport ?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Les vêtements et chaussures de sport ont beaucoup évolué : les articles sont plus techniques, spécialisés et différenciés pour chaque sport. Au final, on accumule des équipements que l'on utilise parfois peu de temps. Il existe pourtant des solutions pour dépenser moins et alléger l'empreinte carbone des vêtements et chaussures de sport. Explications."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "joggeuse"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "10 idées écologiques pour Noël"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Les solutions ne manquent pas pour vivre un moment de fête plus écologique, sans nécessairement déroger aux traditions. Il suffit souvent de quelques adaptations et d’un peu d’anticipation."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "cadeaux-seconde-main"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Comment bien choisir son téléviseur ?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Plusieurs indications vont vous permettre de choisir un téléviseur durable et plus économe en électricité et en ressources."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "indice-durabilite-televiseur-vignette.jpg"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Tous nos conseils pour un téléphone portable qui dure longtemps"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Vous envisagez l’achat d’un smartphone, mais vous aimeriez choisir un produit durable et qui limite ses impacts sur l’environnement ? Découvrez nos conseils pour bien choisir votre prochain téléphone portable."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "reparation-smartphone"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Calculez l'empreinte carbone de vos usages numériques"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Envoyer un email, regarder une vidéo en streaming, suivre une visioconférence… Ces actions du quotidien consomment de l’énergie et émettent du CO₂. Elles ont un impact sur le climat et contribuent à épuiser les ressources de la planète. Découvrez votre empreinte carbone numérique sans attendre !"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "ordinateur-portable-bureau"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Que faire de mes objets et de mes déchets ?"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Vous avez un doute sur le tri de vos emballages, pots de peinture ou médicaments. Vous vous demandez où apporter vos appareils électriques, votre ordinateur ou vos vêtements. Toutes les réponses sont ici."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "dechets-corbeille"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Les bonnes adresses pour louer, acheter et échanger des objets"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Réparation, prêt, don ou location d’objets entre particuliers… Des solutions existent pour donner une seconde vie à nos objets du quotidien. Découvrez les bonnes adresses pour réparer, partager, donner ou acheter en seconde main avec l'outil « Longue vie aux objets » de l’ADEME."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "tri-don-vetement"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Se former en autonomie"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Des formations gratuites, fiables et accessibles peuvent vous aider à mieux comprendre pourquoi et comment agir dans son entreprise en faveur de l’écologie. Découvrez notre sélection."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "formation-numerique-bureau"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Comprendre les symboles de tri et de recyclage"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Consultez les étiquettes et les emballages de vos achats. Vous y trouvez plusieurs symboles qui vous fournissent des informations précieuses pour bien les trier quand ils arriveront en fin de vie. Décryptage de tous les logos et symboles."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "symboles-emballage"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Calculer les émissions de carbone de vos trajets"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Vous vous demandez quel mode de transport émet le moins de CO₂ ? Ce calculateur compare le vélo, la voiture électrique ou thermique, le train et l’avion en fonction du nombre de kilomètres à réaliser."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "velo-roulant"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Les bons gestes pour un chauffage plus économique"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Se chauffer devient de plus en plus coûteux et de nombreux Français déclarent avoir froid chez eux. Pourtant, des solutions simples existent pour améliorer votre confort et réduire vos dépenses d’énergie. Découvrez nos conseils et astuces."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "bon-gestes-chauffage"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "Produire de l’eau chaude avec des énergies renouvelables"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Le chauffe-eau électrique, au gaz ou au fioul n’est plus incontournable dans la maison. Vous pouvez désormais produire votre eau chaude avec un système solaire, un chauffe-eau thermodynamique ou une pompe à chaleur. De quoi allier performance, confort et écologie."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "panneaux-solaires-maison.jpg"
         }
       ]
     },

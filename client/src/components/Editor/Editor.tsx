@@ -14,6 +14,7 @@ export const Editor: React.FC = () => {
     editorProps: {
       handlePaste(_, event) {
         event.preventDefault();
+        console.log("coucou");
 
         const pasted = event.clipboardData?.getData("text/plain") || "";
         const cleaned = cleanText(pasted);
